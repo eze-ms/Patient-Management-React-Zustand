@@ -1,6 +1,5 @@
 # Pacientes Zustand — Gestión de Pacientes con React + Zustand
 
-![Status](https://img.shields.io/badge/status-live-success?style=flat-square)
 ![React](https://img.shields.io/badge/frontend-React-blue?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/language-TypeScript-3178c6?style=flat-square)
 ![State](https://img.shields.io/badge/state-Zustand-yellow?style=flat-square)
