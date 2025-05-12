@@ -83,7 +83,7 @@ git clone https://github.com/eze-ms/Patient-Management-React-Zustand
 
 ```
 
-### Instalar dependencias del backend
+### Instalar dependencias
 ```bash
 npm install
 ```
