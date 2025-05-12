@@ -1,30 +1,99 @@
-# React + TypeScript + Vite
+# Pacientes Zustand — Gestión de Pacientes con React + Zustand
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Status](https://img.shields.io/badge/status-live-success?style=flat-square)
+![React](https://img.shields.io/badge/frontend-React-blue?style=flat-square)
+![TypeScript](https://img.shields.io/badge/language-TypeScript-3178c6?style=flat-square)
+![State](https://img.shields.io/badge/state-Zustand-yellow?style=flat-square)
+![Styling](https://img.shields.io/badge/styling-TailwindCSS-38bdf8?style=flat-square)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📄 Descripción
 
-## Expanding the ESLint configuration
+**Pacientes Zustand** es una aplicación frontend desarrollada con **React + TypeScript**, diseñada para gestionar pacientes de forma intuitiva. Permite registrar, visualizar, editar y eliminar pacientes mediante un formulario controlado y una lista interactiva. Todo el estado de la aplicación se maneja globalmente con **Zustand**, y la interfaz está optimizada para una experiencia fluida y responsive.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🖼️ Capturas
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+#### Formulario de paciente y lista de detalles
+![Formulario de paciente](./assets/cover-pacientes.png)
+
+
+---
+
+## ✨ Funcionalidades
+
+- Registro de pacientes con validaciones personalizadas
+- Edición de pacientes existentes desde la misma interfaz
+- Eliminación con confirmación visual y notificación
+- Visualización de lista con detalles individuales
+- Estado global manejado con **Zustand**
+- Interfaz responsive y estilizada con **Tailwind CSS**
+- Notificaciones contextuales con **React Toastify**
+
+---
+
+## 💻 Tecnologías Utilizadas
+
+- **React 18**
+- **TypeScript**
+- **Zustand**
+- **React Hook Form**
+- **Tailwind CSS**
+- **React Toastify**
+- **Vite** (build y desarrollo)
+
+---
+
+## 📋 Requisitos
+
+- Node.js v18 o superior
+- Navegador moderno (Chrome, Firefox, etc.)
+- Git
+
+---
+
+## 🧱 Estructura del Proyecto
+
+```bash
+Pacientes-Zustand/
+├── src/
+│   ├── components/           # Componentes principales
+│   ├── types/                # Definiciones TypeScript
+│   ├── store.ts              # Estado global con Zustand
+│   ├── utils.ts              # Funciones auxiliares
+│   ├── App.tsx               # Componente raíz
+│   ├── main.tsx              # Punto de entrada
+│   └── index.css             # Estilos globales con Tailwind
+├── public/
+├── dist/                     # Archivos compilados (Vite)
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── vite.config.ts
+└── tsconfig.json
+
+```
+---
+
+## 🛠️ Instalación
+
+```bash
+git clone https://github.com/eze-ms/Patient-Management-React-Zustand
+
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Instalar dependencias del backend
+```bash
+npm install
+```
+
+### Iniciar servidor
+```bash
+npm run dev
+```
+---
+
+© 2024. Proyecto desarrollado por Ezequiel Macchi Seoane
+
